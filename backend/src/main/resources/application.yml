@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/stock_portfolio_app
+    username: postgres
+    password: 2005
+  jpa:
+    ddl-auto : update
+
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+    com.trishane.backend: DEBUG
+    org.hibernate: ERROR
+  pattern:
+    console: "%clr(%d{yyyy-MM-dd HH:mm:ss}){blue} [%thread] %clr(%-5level) %logger{36} - %msg%n"
